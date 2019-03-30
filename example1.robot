@@ -5,12 +5,18 @@ Library  SeleniumLibrary
 
 ค้นหาข้อมูล
   เปิดเว็บ
-#   กรอกข้อมูล  สวัสดี
-#   คลิกค้นหา
+  กรอกข้อมูล  สวัสดี
+  คลิกค้นหา
 
 *** Keywords ***
 เปิดเว็บ
-   Open Browser  https://www.google.co.th  Chrome
+  Open Browser  https://www.google.co.th  Chrome
+กรอกข้อมูล
+  [Arguments]  ${word}
+  Input Text  name:q  ${word}
+คลิกค้นหา
+# Sleep  2
+  Click Button  name:btnK
 
 
 # *** Variables ***
