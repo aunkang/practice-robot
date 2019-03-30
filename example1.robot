@@ -10,8 +10,8 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 เปิดเว็บ
-   Open Browser  www.google.co.th  Chrome
+   Open Browser  https://www.google.co.th  Chrome
 
 
-*** Variables ***
-${BROWSER}  Chrome
+# *** Variables ***
+# ${BROWSER}  Chrome
