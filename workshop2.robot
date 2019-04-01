@@ -47,7 +47,6 @@ Get Wrong Exchangerates
   Should Be Equal  ${error_msg}  ${EXPECTED_ERROR_MESSAGE}
 
 Get Exchangerates In THB
-  ${params}  Create Dictionary  base=THB
   Get  ${SERVICE_PATH}?base=THB
 
   Response Status Code Should Equal  200
